@@ -1,3 +1,3 @@
-from Banner import banner
+from banner import banner
 
-banner("Birthday", "Mr. Baldus")
+banner("Birthday", "Paul Blart")
