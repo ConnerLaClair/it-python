@@ -10,7 +10,8 @@ def banner(subject, author):
     print("-" * banner_length)
     print("")
 
-banner("Hello World", "Conner La Clair")
-subject = input("What's the subject?")
-author = input("Who's the author?")
-banner(subject, author)
+if __name__ == "__main__":
+    banner("Hello World", "Conner La Clair")
+    subject = input("What's the subject?")
+    author = input("Who's the author?")
+    banner(subject, author)
