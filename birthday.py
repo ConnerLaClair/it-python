@@ -9,8 +9,9 @@ banner("Birthday","Paul Blart")
 
 def main():
     birthday = get_birthday_info()
-    compute_days_between_dates()
-    print_brithday_info()
+    today = datetime.date.today()
+    num_days = compute_days_between_dates(birthday, today)
+    print_brithday_info(num_days)
 
 def get_birthday_info():
     print("When were you born?")
@@ -21,11 +22,13 @@ def get_birthday_info():
     birthday = datetime.date(year, month, day)
     return birthday
 
-def compute_days_between_dates():
-    pass
+def compute_days_between_dates(original_date, target_date):
+    current_year = datetime.date(target_date.year, original_date.month, original_date.day)
+    dt = current_year - target_date
+    return dt.days
 
-def print_brithday_info():
-    pass
+def print_brithday_info(number_of_days):
+    print(number_of_days)
 
 
 
