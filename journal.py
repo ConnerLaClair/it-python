@@ -23,7 +23,7 @@ def list_entries(data):
     print("Your journal entries: ")
     entries = reversed(data)
     for num, entry in enumerate (entries):
-        print(f"{num}. {entry}")
+        print(f"[{num+1}]. {entry}")
 
 def add_entry(data):
     entry = input("Type your entry, <ENTER> to exit: ")
